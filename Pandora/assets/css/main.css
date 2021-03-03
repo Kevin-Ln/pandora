@@ -1,0 +1,88 @@
+  /* Positions des chiffres sur le cadran*/
+
+  #chiffre12{position: absolute; top: 3px; left: 272px; background-color: black; color: white; border-radius: 20em; width:1em; height: 1em; text-align: center;}
+  #chiffre11{position: absolute; top: 53px; left: 139px; background-color: black; color: white; border-radius: 20em;width:1em; height: 1em; text-align: center;}
+  #chiffre10{position: absolute; top: 155px; left: 48px; background-color: black; color: white; border-radius: 20em;width:1em; height: 1em; text-align: center;}
+  #chiffre9 {position: absolute; top: 271px; left: 1px; background-color: black; color: white; border-radius: 20em;width:1em; height: 1em; text-align: center;}
+  #chiffre8 {position: absolute; top: 388px; left: 50px; background-color: black; color: white; border-radius: 20em;width:1em; height: 1em; text-align: center;}
+  #chiffre7 {position: absolute; top: 477px; left: 140px; background-color: black; color: white; border-radius: 20em;width:1em; height: 1em; text-align: center;}
+  #chiffre6 {position: absolute; top: 530px; left: 272px; background-color: black; color: white; border-radius: 20em;width:1em; height: 1em; text-align: center;}
+  #chiffre5 {position: absolute; top: 484px; left: 395px; background-color: black; color: white; border-radius: 20em;width:1em; height: 1em; text-align: center;}
+  #chiffre4 {position: absolute; top: 392px; left: 495px; background-color: black; color: white; border-radius: 20em;width:1em; height: 1em; text-align: center;}
+  #chiffre3 {position: absolute; top: 271px; left: 550px; background-color: black; color: white; border-radius: 20em;width:1em; height: 1em; text-align: center;}
+  #chiffre2 {position: absolute; top: 148px; left: 500px; background-color: black; color: white; border-radius: 20em;width:1em; height: 1em; text-align: center;}
+  #chiffre1 {position: absolute; top: 53px; left: 409px; background-color: black; color: white; border-radius: 20em;width:1em; height: 1em; text-align: center;}
+
+
+  
+/* Positions aiguilles */
+  #heure {
+      z-index: 5;
+      position: absolute;
+      height : 130px;
+      top: 148px;
+      left: 266px;
+      transform-origin: bottom;
+  }
+
+  #minute {
+      z-index: 10;
+      position: absolute;
+      height :186px;
+      top: 93px;
+      left: 258px;
+      transform-origin: bottom;
+
+  }
+  @keyframes rotate {
+      to {
+          transform : rotate(360deg)
+      }
+  
+    }
+/* Position suiveurs */
+  #sSeconde {
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      top: 3px; left: 272px;
+  }
+
+  /*#sHeure {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 57px; left: 275px;
+  }*/
+
+  
+.horloge {
+    /*background-color: rgb(141, 141, 141);*/
+    background-image: url("../../images/Bpandora.png");
+    position: relative;
+    margin-left: 42.7em;
+    margin-top: 6em;
+    width: 35.5em;
+    height: 34.5em;
+}
+.header {
+    text-align: center;
+}
+.header> h1 {
+    font-size: 5em;
+    text-align: center;
+    background-color: gray;
+    color:white;
+}
+#bubu {
+    margin-left: 1em;
+    height: 30px;
+    background: linear-gradient(90deg, rgba(153, 112, 0, 0.866) 0%, rgba(236, 214, 12, 0.818) 55%, rgba(225, 250, 1, 0.765) 100%);
+    color: rgb(20, 20, 20);
+    border: solid 1px rgb(73, 1, 1);
+    box-shadow: 8px 5px 10px -5px #000000, 3px 8px 8px #000000;
+}
+body {
+    height: 100vh;
+    width: 100%;
+}
